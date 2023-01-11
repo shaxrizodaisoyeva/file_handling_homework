@@ -7,6 +7,15 @@ def main(data:str):
         list: return answer
     """
     a=data.split(",")
-    b=list(a)
-    return a 
+    b=[]
+    c=0
+    for c in a:
+        d = int(c)
+        b.append(d)
+    return b
+encoding='UTF-8'
+f=open('txt_file/data01.txt')
+data=f.read() 
+print(main(data))
+
 # Read data from file
