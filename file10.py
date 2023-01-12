@@ -8,7 +8,7 @@ def main(data:str):
     """
     b=[]
     c=0
-    data=[data.strip() for data in data]
+    data=[data.rstrip() for data in data]
     for c in data:
         b.append(len(c))
         d=max(b)
