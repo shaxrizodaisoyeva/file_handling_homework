@@ -6,14 +6,15 @@ def main(data:str):
     Returns:
         int: return answer
     """
+    encoding='UTF-8'
+    f=open('txt_file/data10.txt')
+    data=f.read().split("\n")
     b=[]
     a=0
     for a in data:
         b.append(len(a))
         d=max(b)
     return int(d)
-encoding='UTF-8'
-f=open('txt_file/data10.txt')
-data=f.read().split("\n")
-print(main(data))
+a='txt_file/data10.txt'
+print(main(a))
 # Read data from file
