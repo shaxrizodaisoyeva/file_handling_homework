@@ -10,7 +10,7 @@ def main(data:str):
     c=0
     for c in data:
         b.append(len(c))
-    return list(b)
+    return b
 encoding='UTF-8'
 f=open('txt_file/data06.txt')
 data=f.read().split()
