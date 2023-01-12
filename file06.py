@@ -8,12 +8,11 @@ def main(data:str):
     """
     b=[]
     c=0
-    data=[data.rstrip() for data in data]
     for c in data:
         b.append(len(c))
     return list(b)
 encoding='UTF-8'
 f=open('txt_file/data06.txt')
-data=f.readlines()
+data=f.read().split()
 print(main(data))
 # Read data from file
