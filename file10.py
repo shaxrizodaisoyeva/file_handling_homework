@@ -6,12 +6,12 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    b=[]
+    list=[]
     c=0
     data=[data.rstrip() for data in data]
     for c in data:
-        b.append(len(c))
-        d=max(b)
+        list.append(len(c))
+        d=max(list)
     return int(d)
 encoding='UTF-8'
 f=open('txt_file/data10.txt')
