@@ -14,7 +14,7 @@ def main(data:str):
             b+=data[c]
             d=max(b)
         c+=1
-    return d
+    return int(d)
 encoding='UTF-8'
 f=open('txt_file/data08.txt')
 data=f.read() 
