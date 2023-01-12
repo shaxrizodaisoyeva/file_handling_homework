@@ -7,14 +7,13 @@ def main(data:str):
         int: return answer
     """
     b=[]
-    c=0
-    for c in data:
-        b.append(len(c))
-        a=list(b)
-        d=max(a)
+    a=0
+    for a in data:
+        b.append(len(a))
+        d=max(b)
     return int(d)
 encoding='UTF-8'
 f=open('txt_file/data10.txt')
-data=f.read().split()
+data=f.read().split("\n")
 print(main(data))
 # Read data from file
